@@ -5,24 +5,44 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css"">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <style>
+			.circle {
+				display: block;
+				width: 160px;
+				height: 160px;
+				border: 1px solid #999;
+				border-radius: 50%;
+			}
+            .red {
+              background-color: red;
+            }
+            .blue {
+              background-color: blue;
+            }
+            .green {
+              background-color: green;
+            }
+    </style>
 </head>
 <body>
 <div id="app">
-    <h2 v-on:mouseenter="(e) => e.target.style.color = 'red'" v-on:mouseleave="(e) => e.target.style.color = 'blue'">Counter: {{ counter1 }}</h2>
-    <button v-on:click="counter1++">increase counter</button>
+    <div class="circle" @click="isActive = !isActive" :class="{'red': isActive, 'blue': !isActive}"></div>
+    <div class="circle" :class="inputValue"></div>
+    <input type="text" v-model="inputValue">
 </div>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
-    new Vue({
-        el: '#app',
-        data: {
-            counter1: 0
-        },
-        methods: {
-        }
-    });
+	new Vue({
+		el: '#app',
+		data: {
+			isActive: false,
+            inputValue: ''
+		},
+		methods: {
+		}
+	});
 </script>
 </body>
 </html>
