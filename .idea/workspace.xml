@@ -29,7 +29,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../js-practice" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../html-irvas" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -59,6 +59,8 @@
       <workItem from="1600189855127" duration="739000" />
       <workItem from="1601313199978" duration="71000" />
       <workItem from="1601313307859" duration="5406000" />
+      <workItem from="1601397160880" duration="513000" />
+      <workItem from="1602268486743" duration="700000" />
     </task>
     <servers />
   </component>
@@ -70,10 +72,10 @@
       <screen x="0" y="25" width="1600" height="875" />
     </state>
     <state x="549" y="303" width="494" height="324" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.25.1600.875@0.25.1600.875" timestamp="1600189707698" />
-    <state x="583" y="223" width="426" height="485" key="FileChooserDialogImpl" timestamp="1600190592583">
+    <state x="583" y="223" width="426" height="485" key="FileChooserDialogImpl" timestamp="1601397672258">
       <screen x="0" y="25" width="1600" height="875" />
     </state>
-    <state x="583" y="223" width="426" height="485" key="FileChooserDialogImpl/0.25.1600.875@0.25.1600.875" timestamp="1600190592583" />
+    <state x="583" y="223" width="426" height="485" key="FileChooserDialogImpl/0.25.1600.875@0.25.1600.875" timestamp="1601397672258" />
     <state x="304" y="100" width="992" height="731" key="SettingsEditor" timestamp="1600189837097">
       <screen x="0" y="25" width="1600" height="875" />
     </state>

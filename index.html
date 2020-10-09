@@ -10,33 +10,32 @@
 </head>
 <body>
 <div id="app">
-    <ul>
-        <li v-for="(man, index) of people">{{ index + 1 }} {{ man }}</li>
-    </ul>
-    <hr>
-    <ul>
-        <li v-for="(type, key, index) in cars">{{ index }} - {{ key }}: {{ type }}</li>
-    </ul>
+    <my-counter></my-counter>
+    <my-counter></my-counter>
+    <my-counter></my-counter>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
+    let component = {
+		template: `
+    	    <div style="border: 1px solid black; padding: 10px;">
+    	        <h2>{{ counter }}</h2>
+    	        <button @click="counter++">Click</button>
+            </div>
+    	`,
+		data: function () {
+			return {
+				counter: 0
+			}
+		}
+
+	}
+
 	new Vue({
 		el: '#app',
-		data: {
-            people: [
-            	'Elena',
-                'Alex',
-                'Stas'
-            ],
-            cars: {
-            	color:' white',
-                type: 'sedan',
-                doors: 4
-            }
-
-		},
-		methods: {
-		}
+        components: {
+			myCounter: component
+        }
 	});
 </script>
 </body>
